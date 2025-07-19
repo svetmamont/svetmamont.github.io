@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Ателье Стратегий | Светлана Мамонтова</title>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --dark: #121212;
+            --light: #F5F5F5;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--gold);
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+        .tagline {
+            color: var(--gold);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 1rem;
+        }
+        .cta-button {
+            background: var(--gold);
+            color: var(--dark);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 2rem;
+        }
+        .cta-button:hover {
+            opacity: 0.9;
+        }
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            color: var(--gold);
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        h2:after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 2px;
+            background: var(--gold);
+            margin: 0.5rem auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .service-card, .result-card {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 4px;
+        }
+        .result-card h3 {
+            color: var(--gold);
+            font-size: 3rem;
+            margin: 0;
+        }
+        .result-card p {
+            margin-top: 0;
+        }
+        .testimonial {
+            font-style: italic;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .author {
+            color: var(--gold);
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка -->
+        <header>
+            <h1>Ателье Стратегий</h1>
+            <div class="tagline">Светлана Мамонтова | Индивидуальные решения для роста бизнеса</div>
+            <p>Создаю стратегии, которые превращают кризис в прорыв, а идеи — в рыночных лидеров.</p>
+            <button class="cta-button">Заказать стратегическую сессию</button>
+        </header>
+
+        <!-- Услуги -->
+        <section id="services">
+            <h2>Коллекция решений</h2>
+            <div class="grid">
+                <div class="service-card">
+                    <h3>Реанимация бренда</h3>
+                    <p>Для компаний, потерявших позиции. Ребрендинг, перезапуск, выход из кризиса.</p>
+                    <p><em>Результат: +150–400% продаж за 6–12 мес.</em></p>
+                </div>
+                <div class="service-card">
+                    <h3>СТМ «под ключ»</h3>
+                    <p>От идеи до полки. Для ритейла и производителей, готовых к росту через частные марки.</p>
+                    <p><em>Опыт: Ozon Fresh, Smarto, Зелёная Линия.</em></p>
+                </div>
+                <div class="service-card">
+                    <h3>Стратегический аудит</h3>
+                    <p>Диагностика «слабых мест», дорожная карта роста. Для собственников, ищущих ясность.</p>
+                    <p><em>Формат: отчёт + 2 сессии с командой.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Результаты -->
+        <section id="results">
+            <h2>Доказано практикой</h2>
+            <div class="grid">
+                <div class="result-card">
+                    <h3>+650%</h3>
+                    <p>Оборот линейки безглютеновых смесей «Тестовъ» за год</p>
+                </div>
+                <div class="result-card">
+                    <h3>1.2 млрд ₽</h3>
+                    <p>Продаж премиальной линейки «Абрау-Дюрсо» после перезапуска</p>
+                </div>
+                <div class="result-card">
+                    <h3>ROI 150%</h3>
+                    <p>Федеральные кампании для Ozon Fresh</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- О Светлане -->
+        <section id="about">
+            <h2>Ваш стратег</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <p>16 лет создаю рыночные прорывы в FMCG, e-com и ритейле. Не просто разрабатываю стратегии — <strong>внедряю их</strong>, работая с командой и P&L.</p>
+                <p><strong>Философия:</strong> Маркетинг должен окупаться. Мои решения — это рост доли рынка, маржи и узнаваемости.</p>
+                <p><strong>Ключевые навыки:</strong><br>
+                Кризис-менеджмент | Переговоры с ритейлом (0 ₽ за листинг) | Запуск продуктов-лидеров | P&L-оптимизация</p>
+            </div>
+        </section>
+
+        <!-- Отзыв -->
+        <section id="testimonial">
+            <h2>От первого лица</h2>
+            <div class="testimonial">
+                <p>«Светлана не просто аналитик — она стратег, который видит бизнес на 5 шагов вперед. Её переговоры с X5 Retail Group открыли нам федеральный рынок без бюджета на ввод.»</p>
+                <div class="author">— Гендиректор пищевого холдинга (проект NDA)</div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="cta" style="text-align: center; border: none;">
+            <h2>Готовы к рывку?</h2>
+            <p>Работаю с 1–2 проектами в квартал. Следующие слоты — август-сентябрь 2025.</p>
+            <button class="cta-button">Обсудить ваш проект</button>
+            <p><small>Контакты: smamontova@hotmail.com | <a href="https://t.me/nownotlate" style="color: var(--gold);">TG-канал</a> | +7 (985) 274-64-42</small></p>
+        </section>
+
+        <!-- Подвал -->
+        <footer>
+            <p>© 2025 Ателье Стратегий Светланы Мамонтовой. Индивидуальный подход. Измеримые результаты.</p>
+        </footer>
+    </div>
+</body>
+</html>
